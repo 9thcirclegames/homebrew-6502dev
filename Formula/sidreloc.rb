@@ -1,17 +1,17 @@
 class Sidreloc < Formula
   desc "Reloacator for C64 SID files"
-  homepage "https://sourceforge.net/projects/acme-crossass/"
-  url "https://hd0.linusakesson.net/files/sidreloc-1.0.tgz"
-  sha256 "8ca55fb4886bda2a499f837e2f9ffd0a4b7217ee7bb1907ceed9e87ef6157bf6"
+  homepage "https://www.linusakesson.net/software/sidreloc/index.php"
+  url "https://github.com/9thcirclegames/sidreloc/archive/v1.0.tar.gz"
+  sha256 "90e35e295ceb69b18c7387433296a80b20b101e290aedfbd2902333506ae114c"
 
-  def install
-    system "make"
+def install
 
-    bin.install "sidreloc"
-    man1.install "sidreloc.1"
+    system "./configure", "--prefix=#{prefix}"
+    system "make", "install"
+    
   end
 
   test do
-    system "true"
+    system "make", "check"
   end
 end
