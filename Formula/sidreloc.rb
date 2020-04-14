@@ -7,11 +7,9 @@ class Sidreloc < Formula
 def install
 
     system "./configure", "--prefix=#{prefix}"
+    system "make", "all"
     system "make", "install"
     
   end
 
-  test do
-    system "make", "check"
-  end
 end
