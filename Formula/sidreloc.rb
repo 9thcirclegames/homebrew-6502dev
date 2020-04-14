@@ -2,7 +2,7 @@ class Sidreloc < Formula
   desc "Reloacator for C64 SID files"
   homepage "https://www.linusakesson.net/software/sidreloc/index.php"
   url "https://github.com/9thcirclegames/sidreloc/archive/v1.0.tar.gz"
-  sha256 "896de78ee56de012e8fec8d15e7ead6a70d6ec3f69c611007dcd427af94c746c"
+  sha256 "894d31415aef662f0cceaaf62e9b83e2c86ab5e41d1243bc38d67255f6a66d17"
 
 def install
 
